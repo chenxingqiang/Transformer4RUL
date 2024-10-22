@@ -1,0 +1,36 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        // Run `build` in workspaces I depend on first
+        "^build"
+      ],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "build:tailwind": {
+      "dependsOn": [],
+      "outputs": ["style.css"]
+    },
+    "test": {
+      "outputs": ["dist/**"]
+    },
+    "types:check": {
+      "dependsOn": [
+        // Run `build` in workspaces I depend on first
+        "^build"
+      ],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "dev": {
+      "dependsOn": [
+        // Run `build` in workspaces I depend on first
+        "^build"
+      ],
+      "cache": false
+    }
+  }
+}

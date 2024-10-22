@@ -1,0 +1,13 @@
+pnpm-lock.yaml
+.changeset/*.md
+generated-page-map.js
+generated-page-map.ts
+
+docs/pages/docs/guide/advanced/latex.mdx
+
+examples/swr-site/nextra-remote-filepaths/*.json
+examples/swr-site/pages/en/remote/graphql-eslint/_meta.ts
+examples/swr-site/pages/en/remote/graphql-yoga/_meta.ts
+
+docs/pages/docs/guide/built-ins/cards.mdx
+docs/pages/docs/guide/advanced/playground.mdx
